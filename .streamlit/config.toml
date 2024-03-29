@@ -1,9 +1,9 @@
 # 다음을 테마로 적용해 본다 - 1. 
 #
-#[theme]
-#primaryColor= "white"
+[theme]
+primaryColor= "white"
 #backgroundColor= "#444D51"
-#secondaryBackgroundColor= "red"
+secondaryBackgroundColor= "#131c21"
 #textColor= "white"
 #font= "sans serif"
 
@@ -23,4 +23,3 @@
 
 # HEX 컬러는 다음 사이트를 참고해 본다.
 # https://www.color-name.com/
-
