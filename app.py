@@ -56,7 +56,7 @@ def main():
     
     # 이미지 저장 경로
     original_images_directory = r"Test_folder/frames"
-    style_image_path = r"Test_folder\Picasso-The_Weeping_Woman.jpg"
+    style_image_path = r"Test_folder/Picasso-The_Weeping_Woman.jpg"
     composite_images_directory = r"Test_folder/transferred_images" 
     gif_path = r"Test_folder/Jay-won.gif"
 
