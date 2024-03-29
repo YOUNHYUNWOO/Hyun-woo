@@ -55,10 +55,10 @@ def main():
     st.markdown("<h1 style='text-align: center; color:white;'>GIF 생성 과정</h1>", unsafe_allow_html=True)
     
     # 이미지 저장 경로
-    original_images_directory = r".\Test_folder\frames"
-    style_image_path = r".\Test_folder\Picasso-The_Weeping_Woman.jpg"
-    composite_images_directory = r".\Test_folder\transferred_images"
-    gif_path = r".\Test_folder\Jay-won.gif"
+    original_images_directory = "https://github.com/YOUNHYUNWOO/Hyun-woo/tree/main/Test_folder/frames"
+    style_image_path = "https://github.com/YOUNHYUNWOO/Hyun-woo/blob/main/Test_folder/Picasso-The_Weeping_Woman.jpg"
+    composite_images_directory = "https://github.com/YOUNHYUNWOO/Hyun-woo/tree/main/Test_folder/transferred_images" 
+    gif_path = "https://github.com/YOUNHYUNWOO/Hyun-woo/blob/main/Test_folder/Jay-won.gif"
 
 
     # 사이드바 버튼을 가운데 정렬로 배열하기
@@ -67,8 +67,8 @@ def main():
     <style>
     
     .stButton {
-        width: 500px; /* 원하는 크기로 조정 */
-        height: 50px; /* 원하는 크기로 조정 */
+        width: 50px; /* 원하는 크기로 조정 */
+        height: 80px; /* 원하는 크기로 조정 */
         display : flex;
         justify-content: center;
         align-items: center;              
@@ -76,7 +76,10 @@ def main():
     </style>
     """,
     unsafe_allow_html=True)
-    
+
+    # 버튼 클릭 여부를 저장하는 변수
+    button_clicked = False
+
     # 사이드바 과정 1 ~ 3까지 설명
     if st.sidebar.button('과정1'):
         apply_style_to_directory(original_images_directory, style_image_path)
