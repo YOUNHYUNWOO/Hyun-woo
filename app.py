@@ -55,10 +55,10 @@ def main():
     st.markdown("<h1 style='text-align: center; color:white;'>GIF 생성 과정</h1>", unsafe_allow_html=True)
     
     # 이미지 저장 경로(저장 경로는 해당 PC에 맞게 설정해주세요.)
-    original_images_directory = r"C:\Users\1104-28\Desktop\Project(stremlit)\Test_folder\frames"
-    style_image_path = r"C:\Users\1104-28\Desktop\Project(stremlit)\Test_folder\Picasso-The_Weeping_Woman.jpg"
-    composite_images_directory = r"C:\Users\1104-28\Desktop\Project(stremlit)\Test_folder\transferred_images"
-    gif_path = r"C:\Users\1104-28\Desktop\Project(stremlit)\Test_folder\Jay-won.gif"
+    original_images_directory = r".\Test_folder\frames"
+    style_image_path = r".\Test_folder\Picasso-The_Weeping_Woman.jpg"
+    composite_images_directory = r".\Test_folder\transferred_images"
+    gif_path = r".\Test_folder\Jay-won.gif"
 
 
     # 사이드바 버튼을 가운데 정렬로 배열하기
