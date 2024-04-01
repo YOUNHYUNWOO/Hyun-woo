@@ -96,7 +96,7 @@ def main():
             st.write("</div>", unsafe_allow_html=True)
             
             #추가로 이미지를 설명하는 텍스트 작성
-            st.write("<div style='text-align: center; color:white; font-size: 20px;'>해당 X_original(원본)와 X_style(스타일)을 보여준다.</div>", unsafe_allow_html=True)
+            st.write("<div style='text-align: center; color:white; font-size: 20px;'>이미지 합성을 하기 위해 원본 이미지와 스타일 이미지를 준비한다.</div>", unsafe_allow_html=True)
         
         else:
             st.write("디렉토리에 이미지 파일이 없습니다.")
@@ -131,14 +131,14 @@ def main():
             # 이미지를 가로로 결합하여 표시
             st.image(concatenate_images(original_images_to_show[:num_images]), caption="X_original", width=700)
             st.write("...")
-            st.write("<div style='text-align: center; font-size: 80px;'> + </div>", unsafe_allow_html=True)
+            st.write("<div style='text-align: center; font-size: 80px; color: white;'> ↓ </div>", unsafe_allow_html=True)
             st.image(concatenate_images(composite_images_to_show[:num_images]), caption="transferred_images", width=700)
             st.write("...")
             if len(original_images_to_show) > 10 or len(composite_images_to_show) > 10:
               
                 
                 # 추가로 이미지를 설명하는 텍스트를 입력
-                st.write("<div style='text-align: center; color:white; font-size: 20px;'>원본 이미지들과 합성된 이미지들을 합치면 어떤 결과가 나올것인가?</div>", unsafe_allow_html=True)
+                st.write("<div style='text-align: center; color:white; font-size: 20px;'>여러 장의 합성된 사진들을 한데 모아 GIF 파일로 변환한다.</div>", unsafe_allow_html=True)
         else:
             st.write("디렉토리에 이미지 파일이 없습니다.")
         
