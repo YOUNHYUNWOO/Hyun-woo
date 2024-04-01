@@ -147,10 +147,10 @@ def main():
         # GIF 파일을 표시합니다.
         if os.path.isfile(gif_path):
             # st.columns를 사용하여 이미지를 중앙에 배치합니다.
-            col1, col2, col3 = st.columns([1,2,1])  # 중앙 열에 더 큰 가중치를 부여합니다.
+            col1, col2, col3 = st.columns([1,6,1])  # 중앙 열에 더 큰 가중치를 부여합니다.
         
         with col2:  # 이미지를 중앙 열에 표시합니다.
-            st.image(gif_path, caption="Jay-won.gif", width=350)
+            st.image(gif_path, caption="Jay-won.gif", width=500)
     else:
         pass  # 파일이 없을 대 사용자에게 메시지를 보여주고 싶지 않을때
 
