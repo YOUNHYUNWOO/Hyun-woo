@@ -4,7 +4,7 @@
 primaryColor= "white"
 #backgroundColor= "#444D51"
 secondaryBackgroundColor= "#131c21"
-#textColor= "white"
+textColor= "white"
 #font= "sans serif"
 
 # 다음을 테마로 적용해 본다 - 2. 
