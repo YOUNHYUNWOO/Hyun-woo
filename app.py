@@ -68,7 +68,7 @@ def main():
     
     .stButton {
         width: 50px; /* 원하는 크기로 조정 */
-        height: 80px; /* 원하는 크기로 조정 */
+        height: 50px; /* 원하는 크기로 조정 */
         display : flex;
         justify-content: center;
         align-items: center;              
@@ -81,7 +81,7 @@ def main():
     button_clicked = False
 
     # 사이드바 과정 1 ~ 3까지 설명
-    if st.sidebar.button('과정1'):
+    if st.sidebar.button('과정 1'):
         apply_style_to_directory(original_images_directory, style_image_path)
         
         filenames = [f for f in os.listdir(original_images_directory) if f.endswith((".png", ".jpg", ".jpeg"))]
@@ -91,7 +91,7 @@ def main():
             style_image_to_show = Image.open(style_image_path)
             
             # 원본 이미지와 스타일 이미지를 나란히 표시합니다.
-            st.write("<div style='text-align: center;'>", unsafe_allow_html=True)
+            st.write("<div style='text-align: center;>", unsafe_allow_html=True)
             st.image([original_image_to_show, style_image_to_show], caption=["X_original", "X_style"], width=350)
             st.write("</div>", unsafe_allow_html=True)
             
@@ -102,7 +102,7 @@ def main():
             st.write("디렉토리에 이미지 파일이 없습니다.")
     
     
-    if st.sidebar.button('과정2'):
+    if st.sidebar.button('과정 2'):
         # filenames 변수 정의
         filenames = [f"frame_{i}.png" for i in range(80)]  # frame_0.png부터 frame_81.png까지 
 
@@ -143,7 +143,7 @@ def main():
             st.write("디렉토리에 이미지 파일이 없습니다.")
         
       
-    if st.sidebar.button('과정3'):
+    if st.sidebar.button('과정 3'):
         # GIF 파일을 표시합니다.
         if os.path.isfile(gif_path):
             # st.columns를 사용하여 이미지를 중앙에 배치합니다.
